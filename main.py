@@ -11,4 +11,5 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(b"<h1>Merhaba! Kodum Render'da calisiyor</h1>")
 
-HTTPServer(("", 8080), Handler).serve_forever()
+HTTPServer(("", 10000), Handler).serve_forever()
+
